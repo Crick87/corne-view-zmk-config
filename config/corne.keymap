@@ -78,10 +78,10 @@
         nav_layer {
             label = "NAVIG";
             bindings = <
-                &none  &kp ESC   &kp TAB    &kp CAPS  &kp PSCRN  &none        &kp PG_UP  &none     &kp UARW   &none     &none  &none
-                &none  &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHFT  &none        &kp PG_DN  &kp LARW  &kp DARW   &kp RARW  &none  &none
-                &none  &none     &none      &none     &none      &none        &none      &kp HOME  &kp PG_DN  &kp END   &none  &none
-                                             &none  &kp ESC  &kp SPACE        &kp RET  &trans  &none
+                &none  &kp ESC   &kp TAB    &kp CAPS  &caps_word  &kp PSCRN        &kp PG_UP  &none     &kp UARW   &none     &none  &none
+                &none  &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHFT   &none            &kp PG_DN  &kp LARW  &kp DARW   &kp RARW  &none  &none
+                &none  &none     &none      &none     &none       &none            &none      &kp HOME  &kp PG_DN  &kp END   &none  &none
+                                                  &none  &kp ESC  &kp SPACE        &kp RET  &trans  &none
             >;
         };
     };
