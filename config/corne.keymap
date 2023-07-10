@@ -20,6 +20,24 @@
 
 / {
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_tab {
+	        timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp TAB>;
+            layers = <0>;
+        };
+
+        combo_caps_word {
+	        timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&caps_word>;
+            layers = <0>;
+        };
+    };
+
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -78,10 +96,10 @@
         nav_layer {
             label = "NAVIG";
             bindings = <
-                &none  &kp ESC   &kp TAB    &kp CAPS  &caps_word  &kp PSCRN        &kp PG_UP  &none     &kp UARW   &none     &none  &none
-                &none  &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHFT   &none            &kp PG_DN  &kp LARW  &kp DARW   &kp RARW  &none  &none
-                &none  &none     &none      &none     &none       &none            &none      &kp HOME  &kp PG_DN  &kp END   &none  &none
-                                                  &none  &kp ESC  &kp SPACE        &kp RET  &trans  &none
+                &none  &kp ESC   &kp TAB    &caps_word  &kp CAPS    &kp PSCRN        &kp PG_UP  &none     &kp UARW   &none     &none  &none
+                &none  &kp LGUI  &kp LCTRL  &kp LALT    &kp LSHFT   &none            &kp PG_DN  &kp LARW  &kp DARW   &kp RARW  &none  &none
+                &none  &none     &none      &none       &none       &none            &none      &kp HOME  &kp PG_DN  &kp END   &none  &none
+                                                    &none  &kp ESC  &kp SPACE        &kp RET  &trans  &none
             >;
         };
     };
